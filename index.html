@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./images/mist.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search">
+        <form>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="search"
+            spellcheck="false"
+          />
+          <button type="submit" id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="error"><h2>invalid city</h2></div>
+
+      <div class="app">
+        <div class="image">
+          <img src="./images/mist.png" alt="Weather Icon" id="weather-icon" />
+        </div>
+
+        <div class="temperature">
+          <p class="temperature-value">
+            <span class="temperature-number">10</span>°C
+          </p>
+          <p class="city"><span class="city-name">City Name</span></p>
+        </div>
+
+        <div class="details">
+          <div class="Humidity">
+            <img src="./images/humidity.png" alt="Humidity" />
+            <div class="Humidity-value">
+              <span class="Humidity-number">60%</span>
+              <span>Humidity</span>
+            </div>
+          </div>
+          <div class="Wind-Speed">
+            <img src="./images/wind.png" alt="Wind Speed" />
+            <div class="Wind-Speed-value">
+              <span class="Wind-Speed-number">15 km/h</span>
+              <span>Wind Speed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
